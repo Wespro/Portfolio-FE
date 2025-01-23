@@ -19,9 +19,10 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  memoryG,
+  toDoList,
+  battelShip,
+  cVApp,
   threejs,
 } from '../assets';
 
@@ -194,68 +195,106 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Memory-Card Game',
     description:
       'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
     tags: [
       {
-        name: 'react',
+        name: 'react.js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
+        name: 'html',
         color: 'green-text-gradient',
       },
       {
         name: 'css',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'javascript',
+        color: 'yellow-text-gradient',
+      },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: memoryG,
+    source_code_link:
+      'https://github.com/Wespro/-Project-Memory-Card-Tod?tab=readme-ov-file',
+    deploy_code_link: 'https://voidmemorygame.netlify.app/',
   },
+  {
+    name: 'To-do-List App',
+    description:
+      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    tags: [
+      {
+        name: 'html',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'yellow-text-gradient',
+      },
+    ],
+    image: toDoList,
+
+    source_code_link: 'https://github.com/Wespro/Project-Todo-List-TOP',
+    deploy_code_link: 'https://wespro.github.io/Project-Todo-List-TOP/',
+  },
+  {
+    name: 'Battleship Game',
+    description:
+      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    tags: [
+      {
+        name: 'html',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'yellow-text-gradient',
+      },
+    ],
+    image: battelShip,
+
+    source_code_link: 'https://github.com/Wespro/Project-Battleship-TOD',
+    deploy_code_link: 'https://wespro.github.io/Project-Battleship-TOD/',
+  },
+  {
+    name: 'C.V App',
+    description:
+      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    tags: [
+      {
+        name: 'react.js',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'html',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'yellow-text-gradient',
+      },
+    ],
+    image: cVApp,
+    source_code_link:
+      'https://github.com/Wespro/Project-CV-Application-TOD-React.js',
+    deploy_code_link: 'https://void-cv-application.netlify.app/',
+  },
+  //
 ];
 
 export { services, technologies, experiences, testimonials, projects };
