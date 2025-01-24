@@ -4,7 +4,6 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { menu, close } from '../assets';
 import alogo from '../assets/alogo.png';
-import { li } from 'framer-motion/client';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
