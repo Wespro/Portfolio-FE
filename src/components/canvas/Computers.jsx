@@ -31,7 +31,7 @@ const Computers = ({ isMobile }) => {
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width:500px)');
+    const mediaQuery = window.matchMedia('(max-width:900px)');
     setIsMobile(mediaQuery.matches);
     const handleMediaQueryChange = (e) => {
       setIsMobile(e.matches);
@@ -43,6 +43,7 @@ const ComputerCanvas = () => {
   }, []);
   return (
     <Canvas
+      className='overflow-scroll'
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}

@@ -27,7 +27,7 @@ const Navbar = () => {
             className='w-9 h-9 object-contain rounded-full'
           />
           <p className=' text-white text-[20px] font-bold cursor-pointer'>
-            Abdelrahman Mohammed
+            Abdelrahman
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
