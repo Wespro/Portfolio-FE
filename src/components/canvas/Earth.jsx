@@ -26,7 +26,8 @@ const EarthCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Earth />
-      </Suspense>{' '}
+        <Preload all />
+      </Suspense>
     </Canvas>
   );
 };
