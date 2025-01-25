@@ -65,6 +65,66 @@ const ProjectCard = ({
     </motion.div>
   );
 };
+// const ProjectCard2 = ({
+//   index,
+//   name,
+//   description,
+//   tags,
+//   image,
+//   source_code_link,
+//   deploy_code_link,
+// }) => {
+//   return (
+//     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+//       <Tilt
+//         options={{ max: 45, scale: 1, speed: 450 }}
+//         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+//       >
+//         <div className='relative w-full h-[230px]'>
+//           <video
+//             src={`https://www.youtube.com/watch?v=0fYi8SGA20k&t=7616s`}
+//             width={`1450px`}
+//             alt={name}
+//             // className='w-full h-full object-cover rounded-2xl'
+//           />
+
+//           <div
+//             className='absolute inset-0 flex justify-end gap-1 m-3 card-img_
+//         hover'
+//           >
+//             <div
+//               onClick={() => window.open(deploy_code_link, '_blank')}
+//               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer  shadow-lg shadow-violet-700/100'
+//             >
+//               <FaRecordVinyl />
+//             </div>
+//             <div
+//               onClick={() => window.open(source_code_link, '_blank')}
+//               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer  shadow-lg shadow-violet-700/100'
+//             >
+//               <img
+//                 src={github}
+//                 alt='github'
+//                 className='w-1/2 h-1/2 object-contain '
+//               />
+//             </div>
+//           </div>
+//         </div>
+//         <div className='mt-5'>
+//           <h3 className='text-white text-bold text-[24px]'>{name}</h3>
+//           <p className=' mt-2 text-secondary text-[14px]'>{description}</p>
+//         </div>
+//         <div className='mt-4 flex flex-wrap gap-2'>
+//           {tags.map((tag) => (
+//             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+//               #{tag.name}
+//             </p>
+//           ))}
+//         </div>
+//       </Tilt>
+//     </motion.div>
+//   );
+// };
 const Works = () => {
   return (
     <>
@@ -84,11 +144,22 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
+      {/* <motion.div variants={textVariant()}>
+        <h2 className='mt-10 text-4xl font-bold'>Web development :</h2>
+      </motion.div> */}
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+      {/* <motion.div variants={textVariant()}>
+        <h2 className='mt-24 text-4xl font-bold'>Video Editing :</h2>
+      </motion.div>
+      <div className='mt-20 flex flex-wrap gap-7'>
+        {projects.map((project, index) => (
+          <ProjectCard2 key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div> */}
     </>
   );
 };

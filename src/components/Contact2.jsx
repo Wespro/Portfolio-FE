@@ -10,11 +10,11 @@ import github from '../assets/contact2Icons/github.png';
 import behance from '../assets/contact2Icons/behance.png';
 import gmail from '../assets/contact2Icons/gmail.png';
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({ name: '', email: '', mess: '' });
-  const [isloading, setIsLoading] = useState(false);
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  // const formRef = useRef();
+  // const [form, setForm] = useState({ name: '', email: '', mess: '' });
+  // const [isloading, setIsLoading] = useState(false);
+  // const handleChange = (e) => {};
+  // const handleSubmit = (e) => {};
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden '>
       <motion.div
@@ -60,51 +60,6 @@ const Contact = () => {
             />
           </a>
         </div>
-        {/* <form
-          className='mt-12 flex flex-col gap-8'
-          ref={formRef}
-          onSubmit={handleSubmit}
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder={`What's you name?`}
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder={`What's you email?`}
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
-            <textarea
-              rows={`7`}
-              name='mess'
-              value={form.mess}
-              onChange={handleChange}
-              placeholder={`What do you want to say?`}
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <button
-            className='bg-[#f31d6b] outline-none py-3 px-10 w-fit text-white font-bold 
-          shadow-md shadow-primary rounded-xl self-center '
-          >
-            {isloading ? 'sending...' : 'send'}
-          </button>
-        </form> */}
       </motion.div>
       <motion.div
         className='xl:flex-1 xl:h-[550px] md:h-full h-[350px] '
