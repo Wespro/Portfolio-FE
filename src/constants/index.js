@@ -19,6 +19,12 @@ import {
   starbucks,
   tesla,
   shopify,
+  freelancer,
+  mckinseyForwardProgram,
+  molhemon,
+  odinProject,
+  udacity,
+  sprints,
   memoryG,
   toDoList,
   battelShip,
@@ -35,9 +41,14 @@ export const navLinks = [
     id: 'about',
     title: 'About',
   },
+
   {
     id: 'work',
     title: 'Work',
+  },
+  {
+    id: 'projects',
+    title: 'Projects',
   },
   {
     id: 'contact',
@@ -122,55 +133,80 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Free',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    title: 'Freelance Video Editor',
+    company_name: 'Self-Employed',
+    icon: freelancer,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'Aug 2019 - present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Taking a whole project from A to Z.',
+      'Discussing with different clients their preferences for every project and delivering a suitable outcome',
+      'Manipulate and edit RAW pieces in a way that is invisible to the audience.',
+      'Input music, dialogues, graphics, and effects.',
+      ' Create rough and final cuts and Color correction skills.',
+      'Work closely with a team to get the best outcome',
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Video Editor',
+    company_name: 'Molhemon Creative agency',
+    icon: molhemon,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'JULY 2023 - OCT 2024',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Taking a whole project from A to Z.',
+      'Discussing with different clients their preferences for every project and delivering a suitable outcome',
+      'Manipulate and edit RAW pieces in a way that is invisible to the audience.',
+      'Input music, dialogues, graphics, and effects.',
+      ' Create rough and final cuts and Color correction skills.',
+      'Work closely with a team to get the best outcome',
     ],
   },
+];
+
+const courses = [
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    title: 'Front-end Web Developer Graduate',
+    company_name: 'The Odin Project',
+    icon: odinProject,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: 'Mar 2023 – Mar 2024 ',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
+    title: 'Graduate',
+    company_name: 'Mckinsey Forward Program',
+    icon: mckinseyForwardProgram,
+    iconBg: '#383E56',
+    date: 'June 2023 - Nov 2023 ',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      `Forward, offered by McKinsey, is a six-month online learning journey that equips young talent with must-have practical skills to help them succeed in the future of work.`,
+    ],
+  },
+  {
+    title: 'Front-end Web Developer Graduate',
+    company_name: 'Sprints',
+    icon: sprints,
+    iconBg: '#E6DEDD',
+    date: 'May 2022 – Jul 2022 ',
+    points: [
+      'Developing and maintaining 1 big web application(E-commerce) using React and related technologies.',
+      'Collaborating with cross-functional teams and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+    ],
+  },
+  {
+    title: 'Front-end Web Developer Graduate',
+    company_name: 'Udacity',
+    icon: udacity,
+    iconBg: '#E6DEDD',
+    date: 'Feb 2022 – Mar 2022 ',
+    points: [
+      'Developing and maintaining web applications using javascript and related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
     ],
   },
 ];
@@ -306,4 +342,4 @@ const projects = [
   //
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, courses, testimonials, projects };

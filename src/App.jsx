@@ -13,6 +13,8 @@ import {
 } from './components';
 import Tech2 from './components/Tech2';
 import { useEffect, useState } from 'react';
+import Courses from './components/Courses';
+import Contact2 from './components/Contact2';
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -34,13 +36,13 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Experience />
         {isMobile ? <Tech2 /> : <Tech />}
-
+        <Courses />
         <Works />
+        <Experience />
         {/* <Feedbacks /> */}
         <div className='relative z-0'>
-          <Contact />
+          <Contact2 />
           <StarsCanvas />
         </div>
       </div>

@@ -28,6 +28,12 @@ import meta from './company/meta.png';
 import shopify from './company/shopify.png';
 import starbucks from './company/starbucks.png';
 import tesla from './company/tesla.png';
+import freelancer from './company/freelancer.png';
+import mckinseyForwardProgram from './company/mckinseyForwardProgram.png';
+import molhemon from './company/molhemon.jpg';
+import odinProject from './company/odinProject.png';
+import udacity from './company/udacity.svg';
+import sprints from './company/sprints.png';
 
 import memoryG from './memoryG.png';
 import toDoList from './toDoList.png';
@@ -63,6 +69,12 @@ export {
   shopify,
   starbucks,
   tesla,
+  freelancer,
+  mckinseyForwardProgram,
+  molhemon,
+  odinProject,
+  udacity,
+  sprints,
   memoryG,
   toDoList,
   battelShip,
