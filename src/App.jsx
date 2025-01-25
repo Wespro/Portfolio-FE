@@ -11,7 +11,21 @@ import {
   StarsCanvas,
   BallCanvas,
 } from './components';
+import Tech2 from './components/Tech2';
+import { useEffect, useState } from 'react';
 const App = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width:700px)');
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
@@ -21,7 +35,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {isMobile ? <Tech2 /> : <Tech />}
         <Works />
         <Feedbacks />
         <div className='relative z-0'>

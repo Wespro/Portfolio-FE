@@ -24,6 +24,10 @@ import {
   battelShip,
   cVApp,
   threejs,
+  vite512,
+  StyledComponents,
+  Sass,
+  reactRouter,
 } from '../assets';
 
 export const navLinks = [
@@ -57,10 +61,10 @@ const services = [
 ];
 
 const technologies = [
-  // {
-  //   name: 'HTML 5',
-  //   icon: html,
-  // },
+  {
+    name: 'HTML 5',
+    icon: html,
+  },
   {
     name: 'CSS 3',
     icon: css,
@@ -70,6 +74,10 @@ const technologies = [
     icon: javascript,
   },
   {
+    name: 'git',
+    icon: git,
+  },
+  {
     name: 'TypeScript',
     icon: typescript,
   },
@@ -77,37 +85,38 @@ const technologies = [
     name: 'React JS',
     icon: reactjs,
   },
-  // {
-  //   name: 'Redux Toolkit',
-  //   icon: redux,
-  // },
+  {
+    name: 'React Router',
+    icon: reactRouter,
+  },
+  {
+    name: 'Vite',
+    icon: vite512,
+  },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
-  // {
-  //   name: 'Node JS',
-  //   icon: nodejs,
-  // },
-  // {
-  //   name: 'MongoDB',
-  //   icon: mongodb,
-  // },
+  {
+    name: 'Styled Components',
+    icon: StyledComponents,
+  },
+  {
+    name: 'Sass',
+    icon: Sass,
+  },
   {
     name: 'Three JS',
     icon: threejs,
   },
-  {
-    name: 'git',
-    icon: git,
-  },
   // {
-  //   name: 'figma',
-  //   icon: figma,
+  //   name: 'Redux Toolkit',
+  //   icon: redux,
   // },
+
   // {
-  //   name: 'docker',
-  //   icon: docker,
+  //   name: 'Node JS',
+  //   icon: nodejs,
   // },
 ];
 
